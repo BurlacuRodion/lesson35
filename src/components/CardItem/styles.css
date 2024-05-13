@@ -1,0 +1,32 @@
+.card-wrapper {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding: 16px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card-wrapper:hover {
+    border-color:black;
+}
+
+.card-image {
+    box-sizing: border-box;
+    width: 100%;
+    height: 150px;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.75rem;
+}
+
+.card-price {
+
+}

@@ -10,10 +10,11 @@ const ProductList = () => {
     useEffect(()=>{
         getProducts()
     },[])
+    
     return <div className='product-list-wrapper'>
         {products.map(item => 
             <CardItem 
-                key={item.title}
+                key={item.id}
                 title={item.title} 
                 img={item.img} 
                 price={item.price}

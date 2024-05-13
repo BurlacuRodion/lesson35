@@ -1,13 +1,14 @@
 import './styles.css';
 import { useNavigate } from 'react-router-dom';
-import ShopingCartIcon from '../../assets/shopping-cart.png';
+//import ShopingCartIcon from '../../assets/shopping-cart.png';
 import { ProductsContext } from '../../context/productsContext';
 import { useContext } from 'react';
+import Counter from '../Counter/indes';
 
 
 const CardItem = ({title, img, price, id, mesureType}) => {
     const navigate = useNavigate()
-    const {handleAddToCart} = useContext(ProductsContext)
+    const { handleAddToCart, handleChangeSelectedAmount, selectedAmount } = useContext(ProductsContext)
 
     const handleClick = () => {
         navigate(`/product/${id}`)
@@ -22,10 +23,7 @@ const CardItem = ({title, img, price, id, mesureType}) => {
             <img className='card-image' src={img} alt={`${title}-image`} />
             <p className='card-title'>{title}</p>
             <span className='card-price'>{price}$</span>
-            <div onClick={handleAddProduct}>
-                <img className='card-shoping-cart' src={ShopingCartIcon} alt="shoping-cart" />
-            </div>
-            
+            <Counter value={selectedAmount} onClick={handleAddProduct} onChange={handleChangeSelectedAmount}/>  
         </div>
     );
 }

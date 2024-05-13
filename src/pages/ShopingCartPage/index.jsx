@@ -7,11 +7,11 @@ const ShopingCartPage = () => {
 
     console.log(cart)
 
-    //if(cart.length = 0) return <div>cart is empty</div>
+    if(cart.length === 0) return <div>cart is empty</div>
 
     const renderShopingList = cart.map((product) => {
         return (
-            <div className="cart-item">
+            <div className="cart-item" key={product.title}>
                 <p>{product.title}</p>
                 <p>{product.amount}</p>
                 <p>Price per {product.mesureType}: {product.price}</p>

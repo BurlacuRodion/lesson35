@@ -13,6 +13,7 @@
 .counter-input {
     border: none;
     width: 16px;
+    outline: none;
 }
 
 .counter-input-wrapper {

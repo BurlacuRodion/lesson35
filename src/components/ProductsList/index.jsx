@@ -18,6 +18,7 @@ const ProductList = () => {
                 img={item.img} 
                 price={item.price}
                 id={item.id}
+                mesureType={item.mesureType}
             />)
         }
     </div>

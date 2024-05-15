@@ -49,6 +49,7 @@ const CardItem = ({title, img, price, id, mesureType, amount}) => {
                 onChange={handleChangeValue}
                 arrowLeftAction={arrowLeftAction}
                 arrowRightAction={arrowRightAction}
+                showIcon={true}
             />  
         </div>
     );

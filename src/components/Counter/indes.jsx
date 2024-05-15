@@ -4,7 +4,7 @@ import  ArrowRightIcon from '../../assets/angle-right.png';
 import ShopingCartIcon from '../../assets/shopping-cart.png';
 import './styles.css'
 
-const Counter = ({value, onChange, onClick, arrowLeftAction, arrowRightAction}) => {
+const Counter = ({value, onChange, onClick, arrowLeftAction, arrowRightAction, showIcon}) => {
     const handleChange = (e) => {
         e.stopPropagation()
         onChange(e.target.value)
@@ -21,9 +21,9 @@ const Counter = ({value, onChange, onClick, arrowLeftAction, arrowRightAction}) 
             <div onClick={arrowRightAction}> 
                 <img className="counter-icon" src={ArrowRightIcon} alt="arrow-right"/>
             </div>
-            <div onClick={onClick}>
-                <img className='counter-icon' src={ShopingCartIcon} alt="shoping-cart" />
-            </div>
+            { showIcon == true && <div onClick={onClick}>
+                <img className='counter-icon-delete' src={ShopingCartIcon} alt="shoping-cart" />
+            </div>}
         </div>
     );
 }

@@ -6,9 +6,11 @@
     width: 100%;
 }
 
-.counter-icon {
+.counter-icon,
+.counter-icon-delete {
     width: 1rem;
 }
+
 
 .counter-input {
     border: none;

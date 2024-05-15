@@ -182,7 +182,6 @@ const mockData = [
     const [selectedAmount, setSelectedAmount] = useState(1)
 
     const handleChangeSelectedAmount = (value) => {
-      if(isNaN(value) && value > 1) return;
       setSelectedAmount(value)
     }
 

@@ -48,56 +48,56 @@ const mockData = [
       img:'https://assets2.cbsnewsstatic.com/hub/i/2021/10/21/6ab6b381-fb6d-480d-a5a7-1e1af08b9077/atomic-habits.jpg?v=3a71db5e6dd1c027f95668a1c7b6fcaf',
       price:'10.00',
       mesureType: 'pice',
-      id:'25'
+      id:'7'
     },
     {
       title: 'War and Gold',
       img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvnlZM2KC4_Sn1BhiZV6MHitxOzP175u36SupdECHikg&s',
       price:'10.00',
       mesureType: 'pice',
-      id:'26'
+      id:'8'
     },
     {
       title: 'How The Minds Works',
       img:'https://stevenpinker.com/files/styles/original/public/pinker/files/book_6.jpg?itok=URxwgScs',
       price:'10.00',
       mesureType: 'pice',
-      id:'26'
+      id:'9'
     },
     {
       title: 'Ancient World',
       img:'https://m.media-amazon.com/images/I/71OXQZezcnL._AC_UF1000,1000_QL80_DpWeblab_.jpg',
       price:'10.00',
       mesureType: 'pice',
-      id:'26'
+      id:'10'
     },
     {
       title: 'CHAOS',
       img:'https://m.media-amazon.com/images/I/91N3RcpdOGL._AC_UF350,350_QL50_.jpg',
       price:'10.00',
       mesureType: 'pice',
-      id:'26'
+      id:'11'
     },
     {
       title: 'Infinite Powers',
       img:'https://media.wired.com/photos/5dfc0b15a03b9b0008afa1a0/master/w_1600%2Cc_limit/Science_books_9781328879981_hres.jpg',
       price:'10.00',
       mesureType: 'pice',
-      id:'26'
+      id:'12'
     },
     {
       title: 'Harry Potter',
       img:'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474154022i/3._UX187_.jpg',
       price:'10.00',
       mesureType: 'pice',
-      id:'26'
+      id:'13'
     },
     {
       title: 'Global History',
       img:'https://m.media-amazon.com/images/I/719f1DyvWlL._AC_UF1000,1000_QL80_.jpg',
       price:'10.00',
       mesureType: 'pice',
-      id:'26'
+      id:'14'
     }
     
   ]
@@ -131,6 +131,11 @@ const mockData = [
         return {product: mockData.find(item=> item.id === id)}
     }
 
+    const changeCart = (value) => {
+      setCart(value)
+
+    }
+
     const handleAddToCart = (product) => {
       const alreadyAdded = cart.some(item => item.id === product.id);
 
@@ -151,6 +156,8 @@ const mockData = [
           getProduct, 
           handleAddToCart, 
           cart, 
+          changeCart
+
           // handleChangeSelectedProduct,
           // selectedProduct
            }}>

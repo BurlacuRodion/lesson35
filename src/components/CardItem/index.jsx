@@ -35,7 +35,6 @@ const CardItem = ({title, img, price, id, mesureType, amount}) => {
         setValue(1)
     } 
     
-
     return (
         <div className='card-wrapper'>
             <div onClick={handleClick} className='card'>

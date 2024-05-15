@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    margin:50px;    
+    margin:50px;  
+    position: relative;  
 }
 
 .cart-item {
@@ -11,7 +12,7 @@
     width: 100%;
     gap: 16px;
     font-size: 1.25rem;
-    /* background-color: rgb(32, 32, 32, 0.1); */
+    background-color: white;
     padding: 16px 8px 6px;
     border-bottom: 1px solid gray;
 }
@@ -25,9 +26,14 @@
 }
 
 .cart-counter {
-    width: 250px;
+  
 }
 
 .cart-img {
     width: 150px;
+}
+
+.cart-price {
+    position: absolute;
+    right: 10px;
 }

@@ -22,7 +22,10 @@ const ShopingCartPage = () => {
                     <p>{product.amount}</p>
                 </div>
                 {/* <p>Price per {product.mesureType}: {product.price}</p> */}
-                <p>Cost: {product.amount * Number(product.price)}</p>
+                <div className='cart-price'>
+                    <p>Cost: {product.amount * Number(product.price)}</p>
+                </div>
+                
             </div>
         )        
     })

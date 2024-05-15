@@ -141,7 +141,6 @@ const mockData = [
         return;
       };
       setCart(prev => [...prev, product])
-      
       setProducts(products.map(item => item.id === product.id ? {...item, amount: item.amount + product.amount} : item))
     }
 

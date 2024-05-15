@@ -20,6 +20,7 @@ const ProductList = () => {
                 price={item.price}
                 id={item.id}
                 mesureType={item.mesureType}
+                amount={item.amount}
             />)
         }
     </div>

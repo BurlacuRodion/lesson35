@@ -3,16 +3,31 @@
     flex-direction: column;
     align-items: center;
     gap: 8px;
-
-
-    margin-top: 64px;
+    margin:50px;    
 }
 
 .cart-item {
     display: flex;
-    width: 350px;
+    width: 100%;
     gap: 16px;
     font-size: 1.25rem;
-    background-color: rgb(32, 32, 32, 0.1);
-    padding: 16px 8px;
+    /* background-color: rgb(32, 32, 32, 0.1); */
+    padding: 16px 8px 6px;
+    border-bottom: 1px solid gray;
+}
+
+.delete-item-wrapper {
+   margin-top: 1em;
+}
+
+.delete-item {
+    width: 1rem;
+}
+
+.cart-counter {
+    width: 250px;
+}
+
+.cart-img {
+    width: 150px;
 }

@@ -1,7 +1,9 @@
 .navigation-bar-container {
     display: flex;
-    background-color: rgb(133, 128, 128);
-    padding: 16px 32px;
+    background-color: rgb(250, 247, 247);
+    border-top: 1px solid rgb(173, 170, 170);
+    border-bottom: 1px solid rgb(173, 170, 170);
+    padding: 8px 32px;
     width: 100%;
     font-size: 1.5rem;
     justify-content: space-between;
@@ -11,24 +13,37 @@
     left: 0;
 }
 
+.navigation-bar-contacts-wrapper {
+    border-top: 1px solid rgb(173, 170, 170);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.navigation-bar-contacts{
+    padding: 0;
+    margin: 5px 0;
+
+}
+
 .navigation-bar-link {
     text-decoration: none;
     color: white;
 }
 
 .navigation-bar-icon {
-    width: 1.5rem;
+    width: 2rem;
     color: white;
 }
 
 .navigation-bar-cart {
-    position: relative;
     cursor: pointer;
+    margin: auto 0;
+    position: relative;
 }
 
 .navigation-bar-cart-amount {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     font-size: 0.75rem;
     color: white;
@@ -39,4 +54,10 @@
     position: absolute;
     top: -4px;
     right: -4px;
+}
+
+.navigation-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
